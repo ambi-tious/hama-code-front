@@ -16,12 +16,12 @@ type companyIndex = [{
   created_at: "2021-01-01 00:00:00"
 }]
 export default async function Home() {
-  const companies: companyIndex = await fetch(`http://localhost/company`,{
-    method: 'GET',
-    headers: {
-      'Content-Type': 'application/json',
-    }
-  }).then(response => response.json());
+  // const companies: companyIndex = await fetch(`http://localhost/company`,{
+  //   method: 'GET',
+  //   headers: {
+  //     'Content-Type': 'application/json',
+  //   }
+  // }).then(response => response.json());
   // console.log(companies);
   return (
     <>
@@ -39,14 +39,14 @@ export default async function Home() {
     </TableRow>
   </TableHeader>
   <TableBody>
-            {companies.map(company => (
+            {/* {companies.map(company => (
               <TableRow key={company.id}>
                 <TableCell>{company.id}</TableCell>
                 <TableCell>{company.name}</TableCell>
                 <TableCell>{company.description}</TableCell>
                 <TableCell className="text-right">{company.created_at}</TableCell>
               </TableRow>
-            ))}
+            ))} */}
   </TableBody>
 </Table>
 

@@ -35,13 +35,13 @@ export default function Create() {
   async function onSubmit(values: z.infer<typeof formSchema>) {
     // Do something with the form values.
     // ✅ This will be type-safe and validated.
-    await fetch(`http://localhost/company`,{
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify(values)
-  })
+  //   await fetch(`http://localhost/company`,{
+  //   method: 'POST',
+  //   headers: {
+  //     'Content-Type': 'application/json',
+  //   },
+  //   body: JSON.stringify(values)
+  // })
   }
   return (
     <Form {...form}>
